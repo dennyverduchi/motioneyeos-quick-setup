@@ -32,7 +32,7 @@ Use DDNS router service with noIP (or equivalent service) credentials
 ![motioneyeOS-telegram](https://github.com/user-attachments/assets/a573a64c-a7ad-4530-bb86-0198cf230d26)
 
 Write the script in a directory where you have write permissions:
-
+```
   PS C:\Users\Foo> ssh admin@example.ddns.net
   Welcome to home!
   admin@example.ddns.net's password:
@@ -40,32 +40,37 @@ Write the script in a directory where you have write permissions:
   total 8
   drwxrwxrwx    3 root     root          4096 Dec 20 11:56 Camera1/
   -rwxr-xr-x    1 root     root           290 Dec 20 11:57 telegram_msg.sh*
-
+```
 ## telegram_msg.sh
+```
   #!/bin/bash
   TOKEN="your_bot_token"
   CHAT_ID="your_chat_id"
   MESSAGE1="Intrusion detected!"
   MESSAGE1="http://example.dds.net:STREAMING-PORT"
 	curl -s -X POST https://api.telegram.org/bot$TOKEN/sendMessage -d chat_id=$CHAT_ID -d text="$MESSAGE1 + $MESSAGE2" > /dev/null
-
+```
 ## Obtain your TOKEN and CHAT_ID
 1. Create a bot with BotFather
 2. use your HTTP API as TOKEN
 3. use /start on your bot and send a message
 4. navigate to https://api.telegram.org/botYOUR-TOKEN/getUpdates
 5. in the JSON you will see something like:
+```
   "chat": {
       "id": xxxxxxxx,   //this is your CHAT_ID
       "first_name": "Foo",
       "username": "Bar",
       "type": "private"
    },
-
+```
 ## Test your script
 
 Make your script executable
+```
 [root@home ~]# chmod +x /home/ftp/sdcard/telegram_msg.sh
-
+```
 Check your telegram bot for notify
+```
 [root@home ~]# /home/ftp/sdcard/./telegram_msg.sh 
+```
