@@ -13,7 +13,6 @@ Quick setup for motioneyeOS
 
 ## Settings
 ![motioneyeOS-users](https://github.com/user-attachments/assets/ca1cebfb-cb39-46d5-a7ac-5173f09bd673)
-![motioneyeOS-services](https://github.com/user-attachments/assets/b41e80b8-79f6-414e-8aa5-c8131b693cfd)
 ![motioneyeOS-services](https://github.com/user-attachments/assets/c6cdd987-af81-47c4-9d35-5eff04921015)
 
 Adjust all preferences like HTTP ports, streaming settings, and motion triggers for recording.
