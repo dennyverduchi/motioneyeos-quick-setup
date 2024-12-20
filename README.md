@@ -8,7 +8,7 @@ Quick setup for motioneyeOS
 ### Create and insert file wpa_supplicant.conf inside SD card, with other boot files
 ![motioneyeOS-wpa-supplicant](https://github.com/user-attachments/assets/18f3f676-ec0b-46ed-817d-7ec0a2f6d4c8)
 
-### Navigate to http://RASPi-IP
+### Navigate to http://raspiIP
 ![motioneyeOS-first-access](https://github.com/user-attachments/assets/7c1fc8f2-ab0d-42f3-a38c-3b4a8a676ed0)
 
 ### Settings
